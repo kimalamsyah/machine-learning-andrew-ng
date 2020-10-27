@@ -134,8 +134,8 @@ Theta2(:, 1) = 0;
 Theta1_scaled = Theta1 * (lambda / m);
 Theta2_scaled = Theta2 * (lambda / m);
 
-reg_Theta1_grad = Theta1_grad + Theta1_scaled;
-reg_Theta2_grad = Theta2_grad + Theta2_scaled;
+Theta1_grad = Theta1_grad + Theta1_scaled;
+Theta2_grad = Theta2_grad + Theta2_scaled;
 
 % Unroll gradients
 grad = [Theta1_grad(:) ; Theta2_grad(:)]

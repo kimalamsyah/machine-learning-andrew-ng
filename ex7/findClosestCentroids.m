@@ -28,7 +28,6 @@ for e=1:length(idx)
         %calculating cost J
         J(i) = sum((X(e, :) - centroids(i, :)).^2);
         [xind, yind] = min(J);
-        %move centroid step
         idx(e) = yind;
     end
 
